@@ -124,7 +124,7 @@ public:
             double lower = JOINT_LIMITS[i].first;
             double upper = JOINT_LIMITS[i].second;
             
-            if (q_sol(i) < lower - 0.01 || q_sol(i) > upper + 0.01) {
+            if (q_sol(i) < lower  || q_sol(i) > upper ) {
                 result.reason = "joint_" + std::to_string(i + 1) + 
                                " (" + std::to_string(result.joints_deg[i]) + "°) outside limits";
                 return result;
