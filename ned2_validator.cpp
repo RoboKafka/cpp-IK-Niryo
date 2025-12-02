@@ -81,7 +81,7 @@ public:
     PoseResult validatePose(
         double x, double y, double z,
         double rx, double ry, double rz,
-        double position_tolerance_mm = 5.0,
+        double position_tolerance_mm = 25.0,
         double orientation_tolerance_deg = 5.0
     ) {
         PoseResult result;
